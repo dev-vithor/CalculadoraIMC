@@ -1,0 +1,140 @@
+:root{
+    --blue: #16557a9f;
+    --white: #e8f1f2;
+    --blue-marin: #247ba0;
+    --blue2: #006494;
+    --bluedark: #13293d;
+}
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Pragati Narrow','Sansita', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background: #afcdea; */
+    background: var(--bluedark);
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    /* background: #98c3ed; */
+    background: var(--blue);
+}
+
+.container .left img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-left: 60px;
+}
+
+.container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px;
+    padding: 20px;
+    /* padding-left: 100px; */
+}
+
+
+.container .form .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.input input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font-size: 19px;
+    text-align: center;
+    /* background: #6aaae95a; */
+    background: var(--blue2);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.input input:hover {
+    background: #6aa9e9;
+
+}
+
+.input input::placeholder
+{
+    font-size: 0.8em;
+    color: rgba(240, 248, 255, 0.8);
+    text-transform: uppercase;
+}
+
+button{
+    width: 300px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* background: #6aa9e9; */
+    background: var(--bluedark);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+button:hover
+{
+    background: #318ce7;
+}
+
+.result{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* background: #6aaae95a; */
+    background: var(--blue2);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+}
